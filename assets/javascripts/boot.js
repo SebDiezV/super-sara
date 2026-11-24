@@ -7,7 +7,7 @@ Segredario.Boot.prototype = {
 
   preload: function() {
     this.load.image('preload-bar', 'assets/images/preload-bar.png');
-    this.load.image('logo', 'assets/images/logo.png');
+    this.load.image('logo', 'assets/images/logo.png?v=recreated-1');
   },
 
   create: function() {

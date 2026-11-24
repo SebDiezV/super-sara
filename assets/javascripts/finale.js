@@ -53,13 +53,13 @@ Segredario.Finale.prototype = {
   },
 
   mauroText: [
-              'Que bom que passou dessa fase.',
-              'Você sabe que é muito importante para mim, e sei que sou para você também.',
-              'Não gostaria de te ver perdendo, de qualquer modo estou aqui e sempre estarei para te apoiar.',
-              'Agora que passou dessa fase, se inicia mais uma em nossas vidas, uma bem importante.',
-              'Onde iremos compartilhar ainda mais nossas vidas em nosso co-op que começou há muito tempo.',
-              'E então quer iniciar a nova fase?',
-              'Jéssica Monteiro quer se casar comigo?'
+              'Que bien que conseguiste pasar ese nivel.',
+              'Sabes lo importante que eres para mi, y lo mucho que te amo. Eres mi mejor coincidencia.',
+              'Recuerdo cuando te vi por primera vez, no te conocia, pero con solo ese instante, ya sabia que estabamos destinados a estar juntos.',
+              'Ahora que pasamos esta fase, empezamos una nueva, y no puedo esperar para compartirla contigo.',
+              'Donde empezaremos a construir una bonita y sana relacion, y a vivir muchas aventuras juntos.',
+              'Y entonces, quieres iniciar la nueva fase?',
+              'Sara Terceros quieres ser mi novia?'
              ],
   textIndex: 0,
   textSpeed: 10,
@@ -80,12 +80,9 @@ Segredario.Finale.prototype = {
   npcs: [
     { gid: 672, name: 'mario' },
     { gid: 673, name: 'yoshi' },
-    { gid: 674, name: 'luigi' },
     { gid: 675, name: 'toad' },
     { gid: 676, name: 'dk' },
     { gid: 677, name: 'diddy' },
-    { gid: 678, name: 'fox' },
-    { gid: 679, name: 'pikachu' },
     { gid: 680, name: 'link' },
   ],
 

@@ -23,6 +23,8 @@ Segredario.Preload.prototype = {
     var logo = this.add.sprite(this.game.world.centerX,
                                this.game.world.centerY, 'logo');
     logo.anchor.setTo(0.5);
+    logo.width = 200;
+    logo.height = 100;
   },
 
   preloadBar: function() {
@@ -35,9 +37,13 @@ Segredario.Preload.prototype = {
 
   loadGameAssets: function() {
     this.game.load.spritesheet('player', 'assets/sprites/player.png', 28, 25);
-    this.load.tilemap('level', 'assets/tilemaps/maps/level.json',
+    this.load.tilemap('level', 'assets/tilemaps/maps/level.json?v=restored-map-1',
                                 null, Phaser.Tilemap.TILED_JSON);
     this.load.image('tiles', 'assets/tilemaps/tiles/super_mario_bros.png');
+    this.load.image('sky', 'assets/tilemaps/tiles/sky.png');
+    this.load.image('mountains', 'assets/tilemaps/tiles/mountains.png');
+    this.load.image('bg-stars', 'assets/tilemaps/tiles/bg stars.png');
+    this.load.image('pixilart', 'assets/tilemaps/tiles/pixilart-drawing (1).png');
     this.load.spritesheet('coin', 'assets/tilemaps/tiles/super_mario_bros.png', 16, 16);
     this.load.spritesheet('transparent', 'assets/tilemaps/tiles/super_mario_bros.png', 16, 16);
     this.load.spritesheet('goomba', 'assets/sprites/goomba.png', 16, 16);
@@ -69,7 +75,7 @@ Segredario.Preload.prototype = {
   },
 
   loadFinaleAssets: function() {
-    this.load.tilemap('finale', 'assets/tilemaps/maps/finale.json',
+    this.load.tilemap('finale', 'assets/tilemaps/maps/finale.json?v=restored-map-1',
                                 null, Phaser.Tilemap.TILED_JSON);
   },
 
@@ -81,9 +87,8 @@ Segredario.Preload.prototype = {
     this.load.audio('powerup', 'assets/audios/sound_effects/powerup.wav');
     this.load.audio('flagpole', 'assets/audios/sound_effects/flagpole.wav');
 
-    this.load.audio('level', 'assets/audios/bmgs/level.mp3');
-    this.load.audio('level-complete', 'assets/audios/bmgs/level-complete.mp3');
-    this.load.audio('finale', 'assets/audios/bmgs/finale.mp3');
-    this.load.audio('credits', 'assets/audios/bmgs/credits.mp3');
+    this.load.audio('level', 'assets/audios/bmgs/level.mp3?v=restored-1');
+    this.load.audio('finale', 'assets/audios/bmgs/finale.mp3?v=restored-1');
+    this.load.audio('credits', 'assets/audios/bmgs/credits.mp3?v=restored-1');
   }
 };

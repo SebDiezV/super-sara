@@ -150,6 +150,10 @@ Segredario.Game.prototype = {
   createLevel: function() {
     this.level = this.game.add.tilemap('level');
     this.level.addTilesetImage('super_mario_bros', 'tiles');
+    this.level.addTilesetImage('sky', 'sky');
+    this.level.addTilesetImage('mountains', 'mountains');
+    this.level.addTilesetImage('bg stars', 'bg-stars');
+    this.level.addTilesetImage('pixilart-drawing (1)', 'pixilart');
 
     var backgroundLayer = this.level.createLayer('backgroundLayer');
     this.level.createLayer('backgroundElementsLayer');
@@ -163,7 +167,6 @@ Segredario.Game.prototype = {
 
   createBMG: function() {
     this.bmg = this.game.add.audio('level', 1, true);
-    this.bmgFinale = this.game.add.audio('level-complete', 1, true);
 
     this.bmg.play();
   },
@@ -221,15 +224,12 @@ Segredario.Game.prototype = {
   },
 
   npcs: [
-    { gid: 675, name: 'mario', message: 'Alguém lhe aguarda no castelo.' },
-    { gid: 676, name: 'yoshi', message: 'Bem vinda ao meu mundo!' },
-    { gid: 677, name: 'luigi', message: 'Você não é meu irmão. Onde será que ele está?' },
-    { gid: 678, name: 'toad', message: 'Feliz em te ver por aqui.' },
-    { gid: 679, name: 'dk', message: 'Siga para o castelo.' },
-    { gid: 680, name: 'diddy', message: 'Onde estão as bananas?' },
-    { gid: 681, name: 'fox', message: 'Role feito um barril!' },
-    { gid: 682, name: 'pikachu', message: 'Pika, pika, pikachu!' },
-    { gid: 683, name: 'link', message: 'É perigoso ir sozinha. Entre no castelo!' },
+    { gid: 675, name: 'mario', message: 'Lady: Alguien te espera en el castillo.' },
+    { gid: 676, name: 'yoshi', message: 'Mabel: Bienvenida Sara, te esperan!' },
+    { gid: 678, name: 'toad', message: 'Snoopy: Estoy feliz de verte por aqui.' },
+    { gid: 679, name: 'dk', message: 'Damian: Sigue recto! Digo... Miau.' },
+    { gid: 680, name: 'diddy', message: 'Coraline: Por alli, Sara' },
+    { gid: 683, name: 'link', message: 'Edward: Hola crepusculona, entra, es peligroso ir sola.' },
   ],
 
   currentSpeechBubble: null,
@@ -273,11 +273,7 @@ Segredario.Game.prototype = {
     this.bmg.stop();
     this.player.kill();
 
-    this.bmgFinale.play('', 0, 1, false, false);
-
-    this.game.time.events.add(Phaser.Timer.SECOND * 7, function() {
-      this.state.start('Finale');
-    }.bind(this));
+    this.state.start('Finale');
   },
 
 

@@ -9,21 +9,20 @@ Segredario.Credits.prototype = {
     this.createText();
     this.createBMG();
 
-    this.createTitle('- Super Segredário -');
+    this.createTitle('- Super Sara -');
 
-    this.createParagraph('Mauro George');
+    this.createParagraph('Sevas');
     this.createTitle('Director');
-    this.createParagraph('Mauro George');
+    this.createParagraph('Sevas');
 
     this.createTitle('Special Thanks');
-    this.createParagraph('Maria Nilza');
-    this.createParagraph('José Mauro');
-    this.createParagraph('Gilton Monteiro');
-    this.createParagraph('Heloisa Pereira');
-    this.createParagraph('Julio Monteiro');
-    this.createParagraph('Matheus Brás');
-    this.createParagraph('Cayo Medeiros(Yogodoshi)');
-    this.createParagraph('Nintendo');
+    this.createParagraph('Lady Pugsini');
+    this.createParagraph('Mabel Pines');
+    this.createParagraph('Snoopy');
+    this.createParagraph('Damian');
+    this.createParagraph('Coraline Jones');
+    this.createParagraph('Edward Cullen');
+    this.createParagraph('Sara Terceros');
 
     this.createTitle('HTML5 Game Framework');
     this.createParagraph('Phaser');
@@ -36,22 +35,22 @@ Segredario.Credits.prototype = {
     this.createParagraph('Copyright © 2016 Alex Hanson-White');
     this.createTitle('Sprites');
     this.createParagraph('The Spriters Resource');
-    this.createParagraph('Nintendo');
-    this.createParagraph('Copyright © 2016 Nintendo Co., Ltd.');
+    this.createParagraph('Sevas');
+    this.createParagraph('Copyright © 2026 Sevas Co., Ltd.');
     this.createTitle('Sounds');
     this.createParagraph('The Sounds Resource');
-    this.createParagraph('Mario Mayhem');
-    this.createParagraph('Nintendo');
-    this.createParagraph('Copyright © 2016 Nintendo Co., Ltd.');
-    this.createTitle('Fontes');
+    this.createParagraph('Futile Devices - Sufjan Stevens');
+    this.createParagraph("Comptine d'un autre été - Yann Tiersen");
+    this.createParagraph('Married Life - Michael Giacchino');
+    this.createParagraph('Copyright © 2026 Sevas Co., Ltd.');
+    this.createTitle('Fonts');
     this.createParagraph('Super Mario Bros Alphabet');
     this.createParagraph('Copyright © 2016 Aryel Filipe');
 
-    this.createTitle('Thank You For Playing!');
+    this.createTitle('Gracias por jugar!');
 
     this.createTitle('Produced By');
-    this.createParagraph('Mauro George');
-
+    this.createParagraph('Sevas');
 
     this.createTextAnimations();
   },
@@ -103,7 +102,7 @@ Segredario.Credits.prototype = {
 
   endingMessage: function() {
     var style = { font: "13px Verdana", fill: "#ffffff", align: "center" };
-    var content = 'A nova fase apenas começou... ';
+    var content = 'Una nueva fase apenas comienza... ';
 
     var text = this.game.add.text(this.game.world.centerX, this.game.world.centerY, content, style);
     text.x = this.game.world.centerX - (text.width / 2);

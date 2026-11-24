@@ -1,2 +1,6 @@
 _site
 .sass-cache
+__pycache__/
+*.pyc
+serve.out.log
+serve.err.log
