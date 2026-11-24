@@ -26,6 +26,8 @@ def export(path):
     result = attributes(source)
     result.update(version=1, properties={}, layers=[], tilesets=[])
     for node in source:
+        if node.tag == 'editorsettings':
+            continue
         if node.tag == 'tileset':
             tileset_path = path.parent / node.get('source', '')
             tileset = ET.parse(tileset_path).getroot() if node.get('source') else node

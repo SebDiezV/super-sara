@@ -10,7 +10,9 @@ hgroup, menu, nav, section, menu {
 }
 
 body {
-  background: url("../../assets/images/background.png");
+  min-height: 100vh;
+  background: #fff url("../images/background.jpg?v=hearts-1") repeat center top;
+  background-size: 1200px auto;
 }
 
 header {
